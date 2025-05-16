@@ -11096,6 +11096,14 @@ Pants = "11413189277"
 										Function.PantsTexture(PData.CurrentPartList["Organ"]["Left Butt"],c,{Pants = PData.HPClothes.Pants},PlayerName)
 										Function.PantsTexture(PData.CurrentPartList["Organ"]["Right Butt"],c,{Pants = PData.HPClothes.Pants},PlayerName)
 									end
+
+									if PData.CurrentPartList["Organ"]["Pussy Closed"] then
+										PData.CurrentPartList["Organ"]["Pussy Closed"].Transparency = 0
+										PData.CurrentPartList["Organ"]["Clitoris Closed"].Transparency = 0
+										PData.CurrentPartList["Organ"]["Vagina Closed"].Transparency = 0
+										PData.CurrentPartList["Organ"]["Vulva Closed"].Transparency = 0
+									end
+
 								end
 							elseif PData.BottomHP ~= "" and h.MaxHealth-h.Health < PData.BottomHP then
 								if PData.BottomRipped == true then
@@ -11129,6 +11137,14 @@ Pants = "11413189277"
 										Function.PantsTexture(PData.CurrentPartList["Organ"]["Left Butt"],c,{Pants = c:FindFirstChildOfClass("Pants")},PlayerName)
 										Function.PantsTexture(PData.CurrentPartList["Organ"]["Right Butt"],c,{Pants = c:FindFirstChildOfClass("Pants")},PlayerName)
 									end
+
+									if PData.CurrentPartList["Organ"]["Pussy Closed"] then
+										PData.CurrentPartList["Organ"]["Pussy Closed"].Transparency = 1
+										PData.CurrentPartList["Organ"]["Clitoris Closed"].Transparency = 1
+										PData.CurrentPartList["Organ"]["Vagina Closed"].Transparency = 1
+										PData.CurrentPartList["Organ"]["Vulva Closed"].Transparency = 1
+									end
+
 								end
 							end
 

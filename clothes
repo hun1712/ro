@@ -7002,6 +7002,26 @@ Shirt = "12065840193",
 Pants = "6803411196"
 }
 },
+		[".Black Office"] = {
+["Body Color"] = {
+["HeadColor3"] = Color3.fromRGB(234, 184, 146),
+["LeftArmColor3"] = Color3.fromRGB(234, 184, 146),
+["RightArmColor3"] = Color3.fromRGB(234, 184, 146),
+["LeftLegColor3"] = Color3.fromRGB(234, 184, 146),
+["RightLegColor3"] = Color3.fromRGB(234, 184, 146),
+["TorsoColor3"] = Color3.fromRGB(234, 184, 146),
+},
+["Accessory"] = {
+76272109569287,
+16199722680,
+15986001302,
+13839035363
+},
+["Clothes"] = {
+Shirt = "127912821757546",
+Pants = "14701049509"
+}
+},
         [".Black Sucks"] = {
 ["Body Color"] = {
 ["HeadColor3"] = Color3.fromRGB(234, 184, 146),

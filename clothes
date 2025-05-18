@@ -469,8 +469,8 @@ function RoClothes(Player)
 			Tone = "Base",
 			BundleBodyColor = true,
 			Face = false,
-			MeshSizeLock = true,
-			AccessorySizeLock = true,
+			MeshSizeLock = false,
+			AccessorySizeLock = false,
 			MeshBasePartInvisible = false,
 			BodyPartPhysics = false,
 			CatalogUsername = "",
@@ -504,8 +504,8 @@ function RoClothes(Player)
 			},
 			DamageSFX = "",
 			Volume = 1,
-			TearParticles = false,
-			HealParticles = false,
+			TearParticles = true,
+			HealParticles = true,
 
 			PartList = Function.PartListDefault(),
 
@@ -2248,7 +2248,7 @@ function RoClothes(Player)
 			["Right Leg String"] = {
 				["Instance"] = "Mesh",
 				["Name"] = "Right Leg String",
-				["Size"] = Vector3.new(1.2139999866485596, 2.180999994277954, 1.2020000219345093),
+				["Size"] = Vector3.new(1.2139999866485596, 2.180999994277954, 1.2040000219345093),
 				["CFrame"] = CFrame.new(0.036002636, 0.0627008677, 0.0440006256, 5.10434063e-07, 3.83933411e-06, -1.00000405, 2.04068738e-06, 0.999991536, -3.83933548e-06, 1, 2.0406876e-06, -5.97857024e-07),
 				["Transparency"] = 1,
 				["Material"] = Enum.Material.Plastic,
@@ -2267,7 +2267,7 @@ function RoClothes(Player)
 			["Left Leg String"] = {
 				["Instance"] = "Mesh",
 				["Name"] = "Left Leg String",
-				["Size"] = Vector3.new(1.2139999866485596, 2.180999994277954, 1.2040000219345093),
+				["Size"] = Vector3.new(1.2139999866485596, 2.180999994277954, 1.2020000219345093),
 				["CFrame"] = CFrame.new(-0.0349985957, 0.0630007982, 0.0440015793, 5.10434063e-07, 3.83933411e-06, -1.00000405, 2.04068738e-06, 0.999991536, -3.83933548e-06, 1, 2.0406876e-06, -5.97857024e-07),
 				["Transparency"] = 1,
 				["Material"] = Enum.Material.Plastic,
@@ -7071,7 +7071,7 @@ function RoClothes(Player)
 	local Bundle = {
 		["nil"] = "nil",
 		["Bald"] = {},
-		[".Black"] = {
+[".Black"] = {
 ["Body Color"] = {
 ["HeadColor3"] = Color3.fromRGB(234, 184, 146),
 ["LeftArmColor3"] = Color3.fromRGB(234, 184, 146),
@@ -7864,21 +7864,6 @@ Pants = "11413189277"
 				"Right Nipple"
 			}
 		},
-["Bunny Suit(No String)"] = {
-			["Weld"] = {
-				[1] = "Right Bunny Band",
-				[2] = "Bow",
-				[3] = "Left Bunny Band",
-				[4] = "Bunny Tail",
-				[6] = "Bunny Suit",
-				[7] = "Bunny Ears",
-				[14] = "Collar",
-			},
-			["Unvisible"] = {
-				"Left Nipple",
-				"Right Nipple"
-			}
-		},
 		["Kitty Bra"] = {
 			["Weld"] = {
 				[1] = "Kitty Bra",
@@ -7940,6 +7925,10 @@ Pants = "11413189277"
 		["String Bikini"] = {
 			["Weld"] = {
 				[1] = "String Bikini",
+			},
+			["Unvisible"] = {
+				"Left Nipple",
+				"Right Nipple"
 			}
 		},
 		["Bra 2"] = {
